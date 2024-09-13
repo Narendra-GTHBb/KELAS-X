@@ -1,0 +1,36 @@
+.catur {
+    background-color: blanchedalmond;
+    display: flex;
+    border: 3px solid black;
+    margin: 0px 318px 0px 0px;
+
+}
+
+.container {
+    padding-left: 330px;
+
+    margin: 70px auto;
+
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.black {
+    background-color: burlywood;
+}
+
+.font-style {
+    text-align: center;
+    font-size: 50px;
+}
+
+img {
+    width: 80px;
+}
