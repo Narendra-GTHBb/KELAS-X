@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoope</title>
+    <style>
+        body{
+            background-color: rgb(245, 245, 245);
+        }
+
+        .box{
+            width: 1190px;
+            height: 650px;
+            background-color: white;
+            margin: auto;
+            margin-top: 40px;
+            
+        }
+
+        .container {
+            margin-top: 20px;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            display: flex;
+            position: absolute;
+            left: 190px;
+            top: 50px;
+        }
+
+        .container img{
+            width: 490px;
+            
+        }
+
+
+
+        .mini-img-1 {
+            width: 99px;
+            height: 99px;
+            position: absolute;
+            top: 560px;
+            left:190px;
+            background-color: greenyellow;
+        }
+
+        .mini-img-1 img{
+            width: 99px;
+        }
+
+         .mini-img-2 {
+            width: 99px;
+            height: 99px;
+            position: absolute;
+            top: 560px;
+            left: 289px;
+            background-color: aqua;
+        } 
+
+        .mini-img-2 img{
+            width: 100px;
+        }
+
+        .mini-img-3 img{
+            width:  99px;
+            height:  99px;
+            position: absolute;
+            top: 560px;
+            left: 383px;
+            background-color: rgb(255, 255, 47);
+        } 
+
+        .mini-img-3{
+            width: 99px;
+        }
+
+        .mini-img-4 {
+            width:  99px;
+            height:  99px;
+            position: absolute;
+            top: 560px;
+            left: 485px;
+            background-color: rgb(127, 47, 255);
+        }
+
+        .mini-img-4 img{
+            width: 101px;
+        }
+
+        .mini-img-5 {
+            width:  96px;
+            height:  99px;
+            position: absolute;
+            top: 560px;
+            left: 584px;
+            background-color: deeppink;
+        }
+
+        .mini-img-5 img{
+            width: 100px;
+        }
+        
+
+
+        .gambar-mall img {
+            width: 65px;
+            position: absolute;
+            left: 690px;
+            top: 70px;
+            justify-content: end;
+        }
+
+        .Name-product{
+            font-size: 20px;
+            position: absolute;
+            font-size: 18px;
+            left: 763px;
+            top: 69px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .Name-product-2{
+            font-size:20px;
+            position: absolute;
+            font-size: 18.5px;
+            left: 690px;
+            top: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text-1{
+            position: absolute;
+            left: 690px;
+            top: 125px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: gray;
+        }
+
+        .text-2{
+            position: absolute;
+            left: 850px;
+            top: 120px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: gray;
+            font-size: x-large;
+         
+        }
+
+        .text-3{
+            position: absolute;
+            left: 870px;
+            top: 123px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: larger;
+        }
+        
+        .text-4{
+            position: absolute;
+            left: 890px;
+            top: 125px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: gray;
+        }
+
+        .text-5{
+            position: absolute;
+            left: 1260px;
+            top: 126px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: gray;
+        }
+
+        .kotak{
+            width:640px;
+            height: 135px;
+            background-color: rgb(249, 248, 248);
+            position: absolute;
+            top: 160px;
+            left: 690px;
+        }
+
+        .harga-1{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-decoration-line: line-through;
+            color: gray;
+            font-size: large;
+            position: absolute;
+            top: 30px;
+            left: 25px;
+        }
+
+        .harga-2{
+            font-family:Arial, Helvetica, sans-serif;
+             position: absolute;
+            top: 22px;
+            left: 150px; 
+            font-size:xx-large;
+            color: rgb(211, 1, 1); 
+        }
+
+        .diskon{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: x-small;
+            top: 30px;
+            left: 365px; 
+            border: 4px solid rgb(211, 1, 1);
+            color: white;
+            font-weight:bolder;
+        }
+
+        .diskon{
+            border-radius: 3px;
+            background-color: rgb(211, 1, 1);
+        }
+
+        .ori img{
+            width: 30px;
+            position: absolute;
+          
+            top: 70px;
+            left: 25px;
+        }
+
+        .text-6{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            color: rgb(211, 1, 1);
+            top: 70px;
+            left:65px; 
+        }
+
+        .text-7{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: small;
+            color: gray;
+            top: 95px;
+            left: 65px; 
+        }
+
+        .group-bottom{
+            width: 660px;
+            height: 310px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 320px;
+            left: 690px;
+        }
+
+        .teks-1{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 13px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: gray;
+        }
+
+        .logo img{
+            width: 19px;
+            position: absolute;
+            top: 8px;
+            left: 140px;
+        }
+
+        .teks-2{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 13px;
+            position: absolute;
+            top: 10px;
+            left: 164px;
+
+        }
+
+        .teks-3{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 13px;
+            position: absolute;
+            top: 10px;
+            left: 300px;
+            color: gray;
+        }
+
+        .teks-4 img{
+            width: 20px;
+            position: absolute;
+            top: 7px;
+            left: 448px;
+        }
+
+        .teks-5{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: 13px;
+            top: 68px;
+            left: 20px;
+            color: gray;
+        }
+
+        .teks-6{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: 13px;
+            top: 68px;
+            left: 140px;
+        }
+
+        .teks-7{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: 13px;
+            top: 68px;
+            left: 338px;
+            color: rgb(42, 141, 174);
+        }
+
+        .teks-8{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: 13px;
+            top: 126px;
+            left: 20px;
+            color: gray;
+        }
+
+        .teks-9{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: 13px;
+            top: 126px;
+            left: 140px;
+        }
+
+        .teks-10{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: 11px;
+            border: 3px solid rgb(255, 64, 0);
+            color: white;
+            font-weight: bold;
+            top: 125px;
+            left: 240px;
+        }
+
+        .teks-10{
+            border-radius: 10px;
+          background-color: rgb(255, 64, 0);
+        }
+
+        .teks-11{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: rgb(78, 130, 235);
+            position: absolute;
+            font-size: 13px;
+            
+            top: 128px;
+            left: 285px;
+        }
+
+        .teks-12{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            font-size: 13px;
+            color: gray;
+            top: 184px;
+            left: 20px;
+        }
+
+        .teks-13 img{
+            width: 20px;
+            position: absolute;
+         
+            top: 180px;
+            left: 140px;
+        }
+
+        .teks-13 p{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+         font-size: 13px;
+         top: 170px;
+         left: 175px;
+        }
+
+        .teks-14{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: rgb(185, 183, 183);
+            position: absolute;
+            font-size: 13px;
+         top: 205px;
+         left: 175px;
+        }
+
+        .teks-15 img{
+            width: 20px;
+            position: absolute;
+         
+         top: 230px;
+         left: 140px;
+        }
+
+       .teks-15 p{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+         font-size: 13px;
+         color: gray;
+         top: 220px;
+         left: 175px;
+    }
+
+    .teks-16 p{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+         font-size: 12px;
+         
+         top: 222px;
+         left: 314px;
+    }
+
+    .teks-17 p{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+         font-size: 14px;
+         color: gray;
+         top: 252px;
+         left: 175px;
+    }
+
+    .teks-18 p{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+         font-size: 14px;
+         color: black;
+         top: 252px;
+         left: 314px;
+    }
+
+    .teks-19{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+         font-size: 15px;
+         color: gray;
+         top: 320px;
+         left: 20px;
+    }
+
+    .quantity{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+         display: flex;
+         top: 320px;
+         left: 145px;
+         
+    }
+
+    .min{
+       border: 1px solid rgb(172, 171, 171);
+      width: 20px;
+      height: 20px;
+      text-align: center;
+    }
+
+    .satu{
+        border: 1px solid rgb(172, 171, 171);
+      width: 50px;
+      height: 20px;
+      text-align: center;
+    }
+
+    .tambah{
+        border: 1px solid rgb(172, 171, 171);
+      width: 20px;
+      height: 20px;
+      text-align: center;
+    }
+
+    .teks-20{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+         font-size: 15px;
+         color: gray;
+         top: 320px;
+         left: 260px;
+    }
+
+       
+
+      
+
+      
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    
+    <div class="container">
+        <div class="image"> <img src="https://down-id.img.susercontent.com/file/sg-11134301-7rdwh-lxkzdb8gkwvaf6@resize_w450_nl.webp" alt=""></div>
+    </div>
+    <div class="mini-img-1"><img src="https://down-id.img.susercontent.com/file/sg-11134301-7rdwh-lxkzdb8gkwvaf6@resize_w450_nl.webp" alt=""></div>
+    <div class="mini-img-2"> <img src="https://down-id.img.susercontent.com/file/sg-11134301-7rdyf-lxkzdd9plpze86@resize_w900_nl.webp" alt=""></div>
+    <div class="mini-img-3"> <img src="https://down-id.img.susercontent.com/file/sg-11134301-7rdws-lxkzddbnlotl94@resize_w900_nl.webp" alt=""></div>
+    <div class="mini-img-4"> <img src="https://down-id.img.susercontent.com/file/sg-11134301-7rdx6-lxkzddepfsy489@resize_w900_nl.webp" alt=""></div>
+    <div class="mini-img-5"> <img src="https://down-id.img.susercontent.com/file/sg-11134301-7rdxz-lxkzddgdddnq50@resize_w900_nl.webp" alt=""></div>
+    <div class="gambar-mall">
+        <img src="./images/mall-ori.png" alt="">
+    </div>
+    <div class="Name-product">
+        ASUS ROG FLOW Z13 GZ301VV-I946G6T-O I9-13900H/2X 8GB 
+    </div>
+       <div class="Name-product-2">
+    DDR5/1TB SSD G4/RTX4060 8GB/13.0 NEBULA QHD 165HZ/WIN 11....
+</div>
+<div class="text-1">Belum Ada Penilaian</div>
+<div class="text-2">|</div>
+<div class="text-3">0 </div>
+<div class="text-4">Terjual </div>
+<div class="text-5">Laporkan </div>
+<div class="kotak">
+    <div class="harga-1">Rp34.599.000</div>
+    <div class="harga-2"> <strong></strong>Rp32.866.000</div>
+    <div class="diskon">5% OFF</div>
+    <div class="ori"><img src="./images/Ori.png" alt=""></div>
+    <div class="text-6">Shopee Garansi 100% Ori</div>
+    <div class="text-7">Garansi uang kembali jika produk tidak ori</div>
+</div>
+<div class="group-bottom">
+    <div class="teks-1">Return</div>
+    <div class="logo"><img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/fc40ac00de8257314355.png" alt=""></div>
+    <div class="teks-2">Bebas Pengembalian</div>
+    <div class="teks-3">Berlaku untuk Produk Ini</div>
+    <div class="teks-4"><img src="./images/logo-2.png" alt=""></div>  
+    <div class="teks-5">Cicilan</div>
+     <div class="teks-6">24x Rp1.369.417 (Bunga 0%) </div>
+     <div class="teks-7">Cicilan ></div>  
+     <div class="teks-8">Protection</div>
+     <div class="teks-9">Proteksi Gadget</div>
+     <div class="teks-10">New</div>
+      <div class="teks-11">Melindungi gadgetmu dari kerusakan akibat cairan atau 
+        <br>
+        tidak disengaja hingga 12 bulan</div>
+        <div class="teks-12">Pengiriman</div>   
+         <div class="teks-13"> <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/5cfa35a94ab2309361a5.png" alt=""> <p>Gratis Ongkir</p></div>   
+         <div class="teks-14">Gratis Ongkir dengan min. belanja Rp80.000</div>    
+         <div class="teks-15"><img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/baa823ac1c58392c2031.svg" alt=""> <p>Pengiriman ke</p> </div>
+        <div class="teks-16"><p>KAB. SIDOARJO</p></div>
+         <div class="teks-17"><p>Ongkos Kirim</p></div>
+         <div class="teks-18"><p>Rp0 - Rp6.000</p></div>
+         <div class="teks-19">Kuantitas</div>
+         <div class="quantity">
+            <div class="min">-</div>
+            <div class="satu">1</div>
+            <div class="tambah">+</div>
+         </div>
+         <div class="teks-20">tersisa 1 buah</div>
+</div>
+</div>
+</body>
+
+</html>
