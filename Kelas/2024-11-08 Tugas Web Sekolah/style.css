@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    background-color: black;
+   
+}
+
+.container-fluid{
+    background-color: #0c003f;
+    height: 17.5rem;
+}
+
+.imgjudul{
+    display: flex;
+    align-items: center;   
+    margin-left: 3rem   ;
+    padding-top: 1.5rem;
+    padding-left: 4rem; 
+}
+
+.logo img{
+    scale: 0.75;    
+}
+
+.title{
+    font-style: italic; 
+    color:#7c6d8b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu{
+    background-color: #00284f;
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+    height: 4rem;
+   
+}
+
+.nav {
+    background-color:#00284f;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.nav ul {
+    /* display: flex; */
+    font-size: 15px;
+    font-weight: semi-bold;
+}
+
+.nav li{
+    padding:0 1rem 0 1rem;
+    list-style: none;
+    
+}
+
+.nav a{
+    color: #b3bfcb;
+    position: relative;
+    top: 1.3rem;
+    text-decoration: none;
+}
+
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #00284f;
+
+    margin: 0;
+    padding-left: 0;
+}
+
+ul li {
+  
+    color: #fff;
+    background: #00284f;
+    display: inline-block;
+    border: 1px blue;
+
+    padding: 1;
+    position: relative;
+    text-decoration: none;
+}
+
+ul li:hover {
+  
+    background-color: #00284f;
+    cursor: pointer;
+}
+
+ul li ul {
+  
+    background: #00284f;
+    visibility: hidden;
+    position: absolute;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    left: 0;
+    display: none;
+    z-index: 100;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    margin-bottom: 30px;
+    width: 13rem;
+    
+}
+
+.main{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.content{
+    background-color: white;
+    width: 90%;
+    height: 300rem;
+    margin: auto;
+    display: flex;
+}
+
+.kiri{
+    width: 30%;
+    height: 170rem;
+    background-color: #e6ecf7;
+    position: sticky;
+    top: 0;
+}
+
+.tengah{
+    width: 40%;
+    height: 170rem;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+   
+}
+
+.kanan{
+    width: 30%;
+    height: 100rem;
+    background-color: #e6ecf7;
+    position: sticky;
+    top: 0;
+}
+
+.footer{
+    width: 100%;
+    height: 70px;
+    background-color: red;
+}
+
+.footer-2{
+    width: 100%;
+    height: 32rem;
+    background-color: gray;
+}
+
+.konten{
+    margin-left: 40px;
+    padding-top: 40px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left img{
+   
+    width: 250px;
+} 
+
+.isi{
+    margin-top: 2rem;
+    
+}
+
+.isi h4{
+    font-weight: bold;
+}
+
+.lokasi-sekolah p{
+    font-size: 15px;
+}
+
+.data-sekolah p{
+    font-size: 15px;
+}
+
+.isi-center h6{
+    font-size: 18px;
+}
+
+.footer-3{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+
+.content-footer-3{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+
+.footer-4{
+    width: 100%;
+    height: 170px;
+    background-color: #1c1d21;
+}
+
+.content-footer-4 img{
+   
+    scale: 0.45;
+}
+
+.content-footer-4 p{
+    margin-left: 85px;
+   color: #838588;
+}
+
+
+
+
+
+
+
+
+
+
+
+
