@@ -1,0 +1,351 @@
+/* Custom CSS for Restaurant Application */
+
+:root {
+    --primary-color: #ff6b35;
+    --secondary-color: #2e4057;
+    --accent-color: #f7c59f;
+    --light-color: #efefef;
+    --dark-color: #2b2d42;
+    --success-color: #4caf50;
+    --danger-color: #f44336;
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Playfair Display", serif;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-primary);
+    background-color: #f9f9f9;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header & Navigation */
+.navbar {
+    background-color: white !important;
+    box-shadow: var(--shadow);
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.navbar-brand img {
+    transition: var(--transition);
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 10px;
+}
+
+.nav-item a {
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.nav-item a:hover {
+    color: var(--primary-color);
+    background-color: rgba(255, 107, 53, 0.1);
+}
+
+/* Category Sidebar */
+.list-group-item {
+    border: none;
+    background-color: transparent;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    border-radius: 8px !important;
+    transition: var(--transition);
+}
+
+.list-group-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 107, 53, 0.1);
+}
+
+.list-group-item:hover a {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+/* Menu Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    margin-bottom: 25px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #666;
+    margin-bottom: 15px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 30px;
+    padding: 8px 25px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: #e55a2b;
+    transform: scale(1.05);
+}
+
+/* Cart Table */
+.table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.table thead {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.table th {
+    padding: 15px;
+    font-weight: 500;
+    border: none;
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+.quantity-control a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 5px;
+    transition: var(--transition);
+}
+
+.quantity-control a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    transition: var(--transition);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #3d9c40;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+/* Admin Dashboard */
+.admin-header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header h2 {
+    margin: 0;
+    font-family: var(--font-secondary);
+}
+
+.admin-nav {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 15px;
+}
+
+.admin-nav .list-group-item {
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.admin-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 25px;
+}
+
+.admin-content h1 {
+    font-family: var(--font-secondary);
+    color: var(--secondary-color);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Pagination */
+.pagination {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.page-item .page-link {
+    color: var(--secondary-color);
+    border: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.page-item .page-link:hover {
+    background-color: rgba(255, 107, 53, 0.1);
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .admin-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .admin-header ul {
+        margin-top: 15px;
+    }
+}
